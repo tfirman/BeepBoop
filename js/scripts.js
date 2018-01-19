@@ -1,15 +1,22 @@
 // business logic
 
+var beepBoop = function (lOut) {
+  if (isNaN(lOut)) {
+    alert ("Please input a number, Dave!");
+    return '';
+  };
+};
 
 // user interface logic
 $(document).ready(function() {
   $("form#input-form").submit(function(event) {
     event.preventDefault();
-    var range = parseInt($("input#range").val());
-    var result = beepBoop(range);
+    var lenOutput = parseInt($("input#range").val());
+    var outText = beepBoop(lenOutput);
 
-    $(".output").text(beepBoop);
+    if(outText !== '') $(".output").text(outText);
 
-    $("#result").show();
+    if(outText !== '') $("#result").show();
+    if(outText === '') $("#result").hide();
   });
 });
