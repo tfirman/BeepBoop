@@ -11,6 +11,8 @@ var beepBoop = function (lOut) {
       outString += "I'm sorry, Dave. I'm afraid I can't do that.\n" ;
     } else if ((index.toString()).indexOf("1") !== -1){
       outString += "Boop!" + "\n";
+    }else if ((index.toString()).indexOf("0") !== -1){
+      outString += "Beep!" + "\n";
     } else {
       outString += index + "\n";
     }
