@@ -5,6 +5,11 @@ var beepBoop = function (lOut) {
     alert ("Please input a number, Dave!");
     return '';
   };
+  var outString = ''
+  for (var index = 0; index <= lOut; index += 1){
+    outString += index + ' ';
+  }
+  return outString.slice(0, -1);
 };
 
 // user interface logic
