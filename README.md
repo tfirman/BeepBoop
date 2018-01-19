@@ -10,23 +10,23 @@ _This program takes an integer as input from the user and returns a range of num
 
 ## Specifications
 
-*  The Program as a whole will provide a series of outputs which would default to zero to the input number, except:
+_The Program as a whole will provide a series of outputs which will default to zero to the input number, except:_
 
-*  Program outputs the number if none of the following rules apply
-**  Example Input: 2
-**  Example Output: 2
+* Program outputs the number if none of the following rules apply
+  * Example Input: 2
+  * Example Output: 2
 
 * Program instead outputs "_Beep!_" if the number contains a 0 and none of the following rules apply
-**  Example Input: 20
-**  Example Output: "_Beep!_"
+  * Example Input: 20
+  * Example Output: "_Beep!_"
 
-*  Program instead outputs "_Boop!_" if the number contains a 1 and the following rule does not apply
-**  Example Input: 1
-**  Example Output: "_Boop!_"
+* Program instead outputs "_Boop!_" if the number contains a 1 and the following rule does not apply
+  * Example Input: 1
+  * Example Output: "_Boop!_"
 
-*  Program instead outputs "_I'm sorry, Dave. I'm afraid I can't do that._" if the number is divisible by 3.
-**  Example Input: 0
-**  Example Output: "_I'm sorry, Dave. I'm afraid I can't do that_"
+* Program instead outputs "_I'm sorry, Dave. I'm afraid I can't do that._" if the number is divisible by 3.
+  * Example Input: 0
+  * Example Output: "_I'm sorry, Dave. I'm afraid I can't do that._"
 
 
 ## Setup/Installation Requirements
@@ -35,11 +35,11 @@ _This software is a web page, which should be executable by any modern web brows
 
 ## Known Bugs
 
-_The example specification appears to erroneously assign the output '["Beep"]' to the input 0, which is flatly contradicted by the stated rules - the project specifications require that all Numbers divisible by 3, in this example 0, must be replaced by '["I'm sorry, Dave. I'm afraid I can't do that."]' and further states that the divisible by 3 rule should override the numbers that contain 0 exception.
+The example specification appears to erroneously assign the output '["Beep"]' to the input 0, which is flatly contradicted by the stated rules - the project specifications require that all Numbers divisible by 3, in this example 0, must be replaced by '["I'm sorry, Dave. I'm afraid I can't do that."]' and further states that the divisible by 3 rule should override the numbers that contain 0 exception.
 
 It is thus necessary to either correctly follow the stated exceptions, in which case the output for zero should be ["I'm sorry, Dave. I'm afraid I can't do that."], or follow the stated example specification, in which case the output for zero would be ["Beep!"].  This development environment does not allow for me to request clarification as to why the specifications and example are in conflict, which would be what I would do under other circumstances.
 
-A behavior must be chosen from the two incompatible options: in this case my code will follow the stated ruleset even though this does not agree with the example specification._
+A behavior must be chosen from the two incompatible options: in this case my code will follow the stated ruleset even though this does not agree with the example specification.
 
 ## Technologies Used
 
