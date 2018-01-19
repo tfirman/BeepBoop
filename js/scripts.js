@@ -8,16 +8,15 @@ var beepBoop = function (lOut) {
   var outString = ''
   for (var index = 0; index <= lOut; index += 1){
     if (index % 3 === 0) {
-      outString += "I'm sorry, Dave. I'm afraid I can't do that.\n" ;
+      outString += "I'm sorry, Dave. I'm afraid I can't do that.\r\n" ;
     } else if ((index.toString()).indexOf("1") !== -1){
-      outString += "Boop!" + "\n";
-    }else if ((index.toString()).indexOf("0") !== -1){
-      outString += "Beep!" + "\n";
+      outString += "Boop!" + "\r\n";
+    } else if ((index.toString()).indexOf("0") !== -1){
+      outString += "Beep!" + "\r\n";
     } else {
-      outString += index + "\n";
+      outString += index + "\r\n";
     }
   }
-  alert (outString);
   return outString;
 };
 
@@ -28,9 +27,9 @@ $(document).ready(function() {
     var lenOutput = parseInt($("input#range").val());
     var outText = beepBoop(lenOutput);
 
-    if(outText !== '') $(".output").text(outText);
-
-    if(outText !== '') $("#result").show();
-    if(outText === '') $("#result").hide();
+    if(outText !== '') {
+      $(".output").text(outText);
+      $("#result").show();
+    } else $("#result").hide();
   });
 });

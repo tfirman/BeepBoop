@@ -44,9 +44,9 @@ _This software is a web page, which should be executable by any modern web brows
 
 The example specification appears to erroneously assign the output '["Beep"]' to the input 0, which is flatly contradicted by the stated rules - the project specifications require that all Numbers divisible by 3, in this example 0, must be replaced by '["I'm sorry, Dave. I'm afraid I can't do that."]' and further states that the divisible by 3 rule should override the numbers that contain 0 exception.
 
-It is thus necessary to either correctly follow the stated exceptions, in which case the output for zero should be ["I'm sorry, Dave. I'm afraid I can't do that."], or follow the stated example specification, in which case the output for zero would be ["Beep!"].  This development environment does not allow for me to request clarification as to why the specifications and example are in conflict, which would be what I would do under other circumstances.
+It is thus necessary to either correctly follow the stated exceptions, in which case the output for zero should be ["I'm sorry, Dave. I'm afraid I can't do that."], or follow the stated example specification, in which case the output for zero would be ["Beep!"].  This development environment does not allow for me to request clarification as to why the stated requirement and example are in conflict, which would be what I would do under other circumstances.
 
-A behavior must be chosen from the two incompatible options: in this case my code will follow the stated ruleset even though this does not agree with the example specification.
+A behavior must be chosen from the two incompatible options: in this case my code will follow the stated ruleset even though this does not agree with the example provided.
 
 ## Technologies Used
 
