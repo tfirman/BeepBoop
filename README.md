@@ -6,7 +6,7 @@
 
 ## Description
 
-_This program takes an integer as input from the user and returns a range of numbers from 0 to the number chosen, except that the first and every third number thereafter are replaced by "I'm sorry, Dave. I'm afraid I can't do that."; then any remaining numbers containing 1 are replaced with "Boop!"; then any remaining numbers containing 0 are replaced with "Beep!"._
+_This program takes an integer as input from the user and returns a range of numbers from 0 to the number chosen- except that the zero and every third number thereafter are replaced by "I'm sorry, Dave. I'm afraid I can't do that."; then any remaining numbers containing 1 are replaced with "Boop!"; then any remaining numbers containing 0 are replaced with "Beep!"._
 
 ## Specifications
 
@@ -24,7 +24,7 @@ _The Program as a whole will provide a series of outputs which will default to z
   * Example Input: 1
   * Example Output: "_Boop!_"
 
-* Program instead outputs "_I'm sorry, Dave. I'm afraid I can't do that._" if the number is divisible by 3.
+* Program instead outputs "_I'm sorry, Dave. I'm afraid I can't do that._" if the number is divisible by 3
   * Example Input: 0
   * Example Output: "_I'm sorry, Dave. I'm afraid I can't do that._"
 
