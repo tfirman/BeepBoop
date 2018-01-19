@@ -2,3 +2,14 @@
   display: none;
   white-space: pre-line;
 }
+.btn {
+  color: red;
+  background-color: black;
+}
+.btn:hover {
+  color: pink;
+  background-color: black;
+}
+h1 {
+  text-align: center;
+}

@@ -4,6 +4,9 @@ var beepBoop = function (lOut) {
   if (isNaN(lOut)) {
     alert ("Please input a number, Dave!");
     return '';
+  } else if (lOut < 0) {
+    alert ("Please input a non-negative number, Dave!");
+    return '';
   };
   var outString = ''
   for (var index = 0; index <= lOut; index += 1){

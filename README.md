@@ -18,6 +18,10 @@ _This program takes an integer as input from the user and returns a range of num
   * Example Input: cat
   * Example Output: "Please input a number, Dave!"
 
+* Program outputs "Please input a non-negative number, Dave!" if the input is a negative number
+  * Example Input: -5
+  * Example Output: "Please input a non-negative number, Dave!"
+
 * Program outputs a range of numbers from zero to the input number, but with some entries replaced as specified below:
   * Program outputs the number if none of the following rules apply
     * Example Input: 2
