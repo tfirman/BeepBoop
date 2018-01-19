@@ -9,12 +9,14 @@ var beepBoop = function (lOut) {
   for (var index = 0; index <= lOut; index += 1){
     if (index % 3 === 0) {
       outString += "I'm sorry, Dave. I'm afraid I can't do that.\n" ;
+    } else if ((index.toString()).indexOf("1") !== -1){
+      outString += "Boop!" + "\n";
     } else {
       outString += index + "\n";
     }
   }
   alert (outString);
-  return outString.slice(0, -2);
+  return outString;
 };
 
 // user interface logic
