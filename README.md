@@ -10,23 +10,30 @@ _This program takes an integer as input from the user and returns a range of num
 
 ## Specifications
 
-_The Program as a whole will provide a series of outputs which will default to zero to the input number, except:_
+* Program outputs "Please input a number, Dave!" if the input is blank
+  * Example Input:
+  * Example Output: "Please input a number, Dave!"
 
-* Program outputs the number if none of the following rules apply
-  * Example Input: 2
-  * Example Output: 2
+* Program outputs "Please input a number, Dave!" if the input is not a number
+  * Example Input: cat
+  * Example Output: "Please input a number, Dave!"
 
-* Program instead outputs "_Beep!_" if the number contains a 0 and none of the following rules apply
-  * Example Input: 20
-  * Example Output: "_Beep!_"
+* Program outputs a range of numbers from zero to the input number, but with some entries replaced as specified below:
+  * Program outputs the number if none of the following rules apply
+    * Example Input: 2
+    * Example Output: 2
 
-* Program instead outputs "_Boop!_" if the number contains a 1 and the following rule does not apply
-  * Example Input: 1
-  * Example Output: "_Boop!_"
+  * Program instead outputs "_Beep!_" if the number contains a 0 and none of the following rules apply
+    * Example Input: 20
+    * Example Output: "_Beep!_"
 
-* Program instead outputs "_I'm sorry, Dave. I'm afraid I can't do that._" if the number is divisible by 3
-  * Example Input: 0
-  * Example Output: "_I'm sorry, Dave. I'm afraid I can't do that._"
+  * Program instead outputs "_Boop!_" if the number contains a 1 and the following rule does not apply
+    * Example Input: 1
+    * Example Output: "_Boop!_"
+
+  * Program instead outputs "_I'm sorry, Dave. I'm afraid I can't do that._" if the number is divisible by 3
+    * Example Input: 0
+    * Example Output: "_I'm sorry, Dave. I'm afraid I can't do that._"
 
 
 ## Setup/Installation Requirements
