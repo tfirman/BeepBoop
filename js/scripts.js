@@ -7,9 +7,14 @@ var beepBoop = function (lOut) {
   };
   var outString = ''
   for (var index = 0; index <= lOut; index += 1){
-    outString += index + ' ';
+    if (index % 3 === 0) {
+      outString += "I'm sorry, Dave. I'm afraid I can't do that.\n" ;
+    } else {
+      outString += index + "\n";
+    }
   }
-  return outString.slice(0, -1);
+  alert (outString);
+  return outString.slice(0, -2);
 };
 
 // user interface logic
